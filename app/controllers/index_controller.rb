@@ -29,3 +29,4 @@ def setup_index_view
 	@message = Person.get_message(birth_path_num)
   erb :index
 end
+
