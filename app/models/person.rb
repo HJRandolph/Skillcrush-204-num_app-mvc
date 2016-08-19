@@ -49,4 +49,10 @@ def self.valid_birthdate(input)
 	end
 end
 
+def self.first_name(input)
+	
+end
 
+def self.last_name(input)
+	
+end
