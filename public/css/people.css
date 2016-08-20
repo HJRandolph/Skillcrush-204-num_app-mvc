@@ -1,0 +1,38 @@
+h1, h2, h3, h4, h5, h6 {
+	color: blue;
+}
+
+p { 
+	font-size: 1.65rem;}
+
+p.about {color: gray;}
+
+td {
+	width: 20%;
+	padding-bottom: 5px;}
+	
+.new-person {
+	border: 1px solid black;
+	padding: 25px;
+	background-color: aliceblue;
+}
+
+.edit-person {
+	border: 1px solid black;
+	padding: 25px;
+	background-color: hsla(0, 100%, 90%, 0.3);
+}
+
+.inPageLink {
+	font-weight: 400;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	background-color: aliceblue;
+	text-align:center;
+	
+}
+
+table {
+	margin-bottom: 10px;
+}
