@@ -1,8 +1,17 @@
-<h1>People</h1>
+<table>
+	<tr>
+		<td class="inPageLink"><a href="/people/new">New</a></td>
+	</tr>
+</table>
+<hr>
+<h2>People</h2>
+<p>Click on the links below to view numerology results edit, or remove entries. You may also add names and birthdates via the link above.</p>
 <table>
 	<thead>
 		<th>Name</th>
 		<th>Birthdate</th>
+		<th>Edit</th>
+		<th>Delete</th>
 		</thead>
 	<tbody>
 		<% @people.each do |person| %>
@@ -14,6 +23,14 @@
 				</td>
 				<td>
 					<%= "#{person.birthdate}" %>
+				</td>
+				<td><a href="<%= "/people/#{person.id}/edit" %>">Edit</a>
+				</td>
+				<td>
+					<form action="<%= "/people/#{person.id}" %>" method="post">
+              <input type="hidden" name="_method" value="delete" />
+              <input type="submit" value="Delete" />
+            </form>
 				</td>
 			</tr>
 		<% end %>

@@ -31,10 +31,10 @@ describe 'Our Numerology App' do
     expect(last_response.redirect?).to eq(true)
   end
 
-  it "has a form" do
-    get '/'
-    expect(last_response.body).to include("<form ")
-  end
+#  it "has a form" do
+ #   get '/'
+  #  expect(last_response.body).to include("<form ")
+  #end
 
   it "responds with success when we pass a birthday" do
     get '/04211999'
