@@ -1,7 +1,11 @@
 <%=erb :"/people/_nav" %>
 
 <h2>Add a Person</h2>
-
+<% if !@errors.blank? %>
+  <p class="errors">
+    <%= "#{@errors}" %>
+  </p>
+<% end %>
 <%=erb :"/people/_form" %>
 
 
